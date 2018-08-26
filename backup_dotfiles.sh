@@ -3,7 +3,6 @@ cp -r /home/nico/.config/i3 .
 cp /home/nico/.vimrc .
 cp /home/nico/.Xresources .
 cp /home/nico/.zshrc .
-cp -r /home/nico/.vim .
 cp /home/nico/.config/compton.conf .
 cp -r /home/nico/.config/i3status .
 cp -r /home/nico/.config/mps-youtube/config .
