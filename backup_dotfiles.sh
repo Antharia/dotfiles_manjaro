@@ -1,6 +1,5 @@
 #!/bin/sh
 cp -r /home/nico/.config/i3 .
-cp -r /home/nico/.config/i3bar .
 cp /home/nico/.vimrc .
 cp /home/nico/.Xresources .
 cp /home/nico/.zshrc .
