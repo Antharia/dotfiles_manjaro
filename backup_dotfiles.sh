@@ -6,7 +6,7 @@ cp /home/nico/.zshrc .
 cp -r /home/nico/.vim .
 cp /home/nico/.config/compton.conf .
 cp -r /home/nico/.config/i3status .
-cp -r /home/nico/.config/mps-youtube .
+cp -r /home/nico/.config/mps-youtube/config .
 cp -r /home/nico/.config/polybar .
 cp -r /home/nico/.config/qutebrowser .
 cp -r /home/nico/.config/ranger .
