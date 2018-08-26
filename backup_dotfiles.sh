@@ -9,7 +9,6 @@ cp -r /home/nico/.config/i3status .
 cp -r /home/nico/.config/mps-youtube/config .
 cp -r /home/nico/.config/polybar .
 cp -r /home/nico/.config/qutebrowser .
-cp -r /home/nico/.config/ranger .
 cp -r /home/nico/.config/rofi .
 cp -r /home/nico/.config/SuperCollider .
 cp -r /home/nico/.config/termite .
