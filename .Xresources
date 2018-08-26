@@ -1,0 +1,208 @@
+! special
+*.foreground:   #f8f8f2
+*.background:   #272822
+*.cursorColor:  #f8f8f2
+
+! black
+*.color0:       #272822
+*.color8:       #75715e
+
+! red
+*.color1:       #f92672
+*.color9:       #f92672
+
+! green
+*.color2:       #a6e22e
+*.color10:      #a6e22e
+
+! yellow
+*.color3:       #f4bf75
+*.color11:      #f4bf75
+
+! blue
+*.color4:       #66d9ef
+*.color12:      #66d9ef
+
+! magenta
+*.color5:       #ae81ff
+*.color13:      #ae81ff
+
+! cyan
+*.color6:       #a1efe4
+*.color14:      #a1efe4
+
+! white
+*.color7:       #f8f8f2
+*.color15:      #f9f8f5
+
+URxvt.font:                       xft:Inconsolata-Regular:size=10, xft:Inconsolata\ for\ Powerline:pixelsize=12
+
+URxvt*letterSpace:               0
+
+URxvt.depth:                      32
+URxvt*scrollBar:                  false
+URxvt*mouseWheelScrollPage:       false
+URxvt*cursorBlink:                true
+URxvt*saveLines:                  1000
+
+URxvt*url-launcher:              /usr/bin/qutebrowser
+! Rxvt.perl-ext-common:            ...,clipboard
+! URxvt.keysym.M-C-c:              perl:clipboard:copy
+! URxvt.keysym.M-v:                perl:clipboard:paste
+! URxvt.keysym.M-C-v:              perl:clipboard:paste_escaped
+! URxvt*termName:                  string
+! URxvt*geometry:                  geometry
+! URxvt*chdir:                     string
+! URxvt*reverseVideo:              boolean
+! URxvt*loginShell:                boolean
+! URxvt*multiClickTime:            number
+! URxvt*jumpScroll:                boolean
+! URxvt*skipScroll:                boolean
+! URxvt*pastableTabs:              boolean
+! URxvt*scrollstyle:               plain
+! URxvt*scrollBar_right:           boolean
+! URxvt*scrollBar_floating:        true
+! URxvt*scrollBar_align:           mode
+! URxvt*thickness:                 number
+! URxvt*scrollTtyOutput:           boolean
+! URxvt*scrollTtyKeypress:         boolean
+! URxvt*scrollWithBuffer:          boolean
+! URxvt*tintColor:                 !7DA55
+! URxvt*blurRadius:                HxV
+! URxvt*fading:                    number
+! URxvt*fadeColor:                 color
+! URxvt*utmpInhibit:               boolean
+! URxvt*urgentOnBell:              boolean
+! URxvt*visualBell:                boolean
+! URxvt*mapAlert:                  boolean
+! URxvt*depth:                     number
+! URxvt*visual:                    number
+! URxvt*transient-for:             windowid
+! URxvt*override-redirect:         boolean
+! URxvt*hold:                      boolean
+! URxvt*externalBorder:            number
+! URxvt*internalBorder:            number
+! URxvt*borderLess:                true
+! URxvt*lineSpace:                 number
+! URxvt*letterSpace:               number
+! URxvt*skipBuiltinGlyphs:         boolean
+! URxvt*pointerBlankDelay:         number
+! URxvt*backspacekey:              string
+! URxvt*deletekey:                 string
+! URxvt*print-pipe:                string
+! URxvt*modifier:                  modifier
+! URxvt*cutchars:                  string
+! URxvt*answerbackString:          string
+! URxvt*secondaryScreen:           boolean
+! URxvt*secondaryScroll:           boolean
+! URxvt*perl-lib:                  string
+! URxvt*perl-eval:                 perl-eval
+! URxvt*perl-ext-common:           string
+! URxvt*perl-ext:                  string
+! URxvt*iso14755:                  boolean
+! URxvt*iso14755_52:               boolean
+! URxvt*xrm:                       string
+! URxvt*keysym.sym:                keysym
+! URxvt*background.border:         boolean
+! URxvt*background.expr:           string
+! URxvt*background.interval:       seconds
+! URxvt*bell-command:              string
+! URxvt*kuake.hotkey:              string
+! URxvt*matcher.button:            string
+! URxvt*matcher.launcher:          string
+! URxvt*matcher.launcher.*:        string
+! URxvt*matcher.pattern.*:         string
+! URxvt*matcher.rend.*:            string
+! URxvt*remote-clipboard.fetch:    string
+! URxvt*remote-clipboard.store:    string
+! URxvt*searchable-scrollback:     string
+! URxvt*selection-autotransform.*: string
+! URxvt*selection-pastebin.cmd:    string
+! URxvt*selection-pastebin.url:    string
+! URxvt*selection.pattern-0:       string
+! URxvt*tab-bg:                    colour
+! URxvt*tab-fg:                    colour
+! URxvt*tabbar-bg:                 colour
+! URxvt*tabbar-fg:                 colour
+! URxvt*url-launcher:              string
+
+! The Terminus font uses the following X-names:
+! -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
+! -xos4-terminus-medium-r-normal--14-140-72-72-c-80-iso10646-1
+! -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
+! -xos4-terminus-medium-r-normal--20-200-72-72-c-100-iso10646-1
+! -xos4-terminus-medium-r-normal--22-220-72-72-c-110-iso10646-1
+! -xos4-terminus-medium-r-normal--24-240-72-72-c-120-iso10646-1
+! -xos4-terminus-medium-r-normal--28-280-72-72-c-140-iso10646-1
+! -xos4-terminus-medium-r-normal--32-320-72-72-c-160-iso10646-1
+! -xos4-terminus-bold-r-normal--12-120-72-72-c-60-iso10646-1
+! -xos4-terminus-bold-r-normal--14-140-72-72-c-80-iso10646-1
+! -xos4-terminus-bold-r-normal--16-160-72-72-c-80-iso10646-1
+! -xos4-terminus-bold-r-normal--20-200-72-72-c-100-iso10646-1
+! -xos4-terminus-bold-r-normal--24-240-72-72-c-120-iso10646-1
+! URxvt*searchable-scrollback:     string
+! URxvt*selection-autotransform.*: string
+! URxvt*selection-pastebin.cmd:    string
+! URxvt*selection-pastebin.url:    string
+! URxvt*selection.pattern-0:       string
+! URxvt*tab-bg:                    colour
+! URxvt*tab-fg:                    colour
+! URxvt*tabbar-bg:                 colour
+! URxvt*tabbar-fg:                 colour
+! URxvt*url-launcher:              string
+
+! The Terminus font uses the following X-names:
+! -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
+! -xos4-terminus-medium-r-normal--14-140-72-72-c-80-iso10646-1
+! -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
+! -xos4-terminus-medium-r-normal--20-200-72-72-c-100-iso10646-1
+! -xos4-terminus-medium-r-normal--22-220-72-72-c-110-iso10646-1
+! -xos4-terminus-medium-r-normal--24-240-72-72-c-120-iso10646-1
+! -xos4-terminus-medium-r-normal--28-280-72-72-c-140-iso10646-1
+! -xos4-terminus-medium-r-normal--32-320-72-72-c-160-iso10646-1
+! -xos4-terminus-bold-r-normal--12-120-72-72-c-60-iso10646-1
+! -xos4-terminus-bold-r-normal--14-140-72-72-c-80-iso10646-1
+! -xos4-terminus-bold-r-normal--16-160-72-72-c-80-iso10646-1
+! URxvt*searchable-scrollback:     string
+! URxvt*selection-autotransform.*: string
+! URxvt*selection-pastebin.cmd:    string
+! URxvt*selection-pastebin.url:    string
+! URxvt*selection.pattern-0:       string
+! URxvt*tab-bg:                    colour
+! URxvt*tab-fg:                    colour
+! URxvt*tabbar-bg:                 colour
+! URxvt*tabbar-fg:                 colour
+! URxvt*url-launcher:              string
+
+! The Terminus font uses the following X-names:
+! -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
+! -xos4-terminus-medium-r-normal--14-140-72-72-c-80-iso10646-1
+! -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
+! -xos4-terminus-medium-r-normal--20-200-72-72-c-100-iso10646-1
+! -xos4-terminus-medium-r-normal--22-220-72-72-c-110-iso10646-1
+! -xos4-terminus-medium-r-normal--24-240-72-72-c-120-iso10646-1
+! -xos4-terminus-medium-r-normal--28-280-72-72-c-140-iso10646-1
+! -xos4-terminus-medium-r-normal--32-320-72-72-c-160-iso10646-1
+! -xos4-terminus-bold-r-normal--12-120-72-72-c-60-iso10646-1
+! -xos4-terminus-bold-r-normal--14-140-72-72-c-80-iso10646-1
+! -xos4-terminus-bold-r-normal--16-160-72-72-c-80-iso10646-1
+! -xos4-terminus-bold-r-normal--20-200-72-72-c-100-iso10646-1
+! -xos4-terminus-bold-r-normal--24-240-72-72-c-120-iso10646-1
+! -xos4-terminus-bold-r-normal--28-280-72-72-c-140-iso10646-1
+! -xos4-terminus-bold-r-normal--32-320-72-72-c-160-iso10646-1
+
+!****************************!
+!                            !
+!         ROFI CONFIG        !
+!                            !
+!****************************!
+
+rofi.width: 500
+rofi.lines: 10
+rofi.font: Inconsolata 10
+rofi.bw: 0
+rofi.padding: 0
+rofi.show-icons: true
+rofi.matching: fuzzy
+rofi.hide-scrollbar: true
+rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
