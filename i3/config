@@ -43,7 +43,7 @@ bindsym $mod+d exec --no-startup-id rofi -show run -width 300
 # launch categorized menu
 bindsym $mod+Shift+d exec --no-startup-id morc_menu
 
-# launcd dmenu
+# launch dmenu
 bindsym $mod+Ctrl+d exec terminal -e dmenu
 
 ################################################################################################
@@ -251,7 +251,6 @@ for_window [class="Xfburn"] floating enable
 for_window [class="mplayer"] floating enable
 for_window [class="mpv"] floating enable
 for_window [class="qjackctl"] floating enable
-for_window [class="purr-data"] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus

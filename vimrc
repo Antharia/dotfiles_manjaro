@@ -16,7 +16,7 @@ set shiftround
 set expandtab
 set smarttab
 set nowrap
-:imap jj <Esc>
+:imap fd <Esc>
 
 " pour avoir Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -27,7 +27,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " ici, on ajoute les plugins
 "...
-Plugin 'munshkr/vim-tidal'
+" Plugin 'munshkr/vim-tidal'
 Plugin 'scrooloose/nerdtree'
 
 
