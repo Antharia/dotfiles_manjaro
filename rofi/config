@@ -1,1 +1,5 @@
-rofi.theme: /home/nico/.cache/wal/colors-rofi-light.rasi
+# Dark theme.
+theme: "~/.cache/wal/colors-rofi-dark";
+
+# Light theme.
+theme: "~/.cache/wal/colors-rofi-light";
