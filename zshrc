@@ -7,7 +7,8 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="gentoo"
+# ZSH_THEME="gentoo"
+ZSH_THEME="agnoster"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -93,18 +94,19 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias bandcamp='campdown'
+alias bcdl='campdown'
 
 # Wal: change terminal colors
 # Import colorscheme from 'wal' asynchronously
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
-# (cat ~/.cache/wal/sequences &)
+(cat ~/.cache/wal/sequences &)
 
 # Alternative (blocks terminal for 0-3ms)
-# cat ~/.cache/wal/sequences
+cat ~/.cache/wal/sequences
 
 # To add support for TTYs this line can be optionally added.
-# source ~/.cache/wal/colors-tty.sh
+source ~/.cache/wal/colors-tty.sh
 
 #### Wal colors application for dmenu
 # Import colors
@@ -112,11 +114,42 @@ alias bandcamp='campdown'
 
 # Create alias
 alias dmen='dmenu_run -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"'
+alias supercollider='scide'
+alias caps='setxkbmap -option caps:super'
+alias wifi-scan='nmcli dev wifi'
+alias wifi-connect='nmcli dev wifi connect'
+alias dual='bash ~/.screenlayout/dualscreen.sh; nitrogen --restore; wal -i ~/Images/wallpapers/cyber00.jpg -n'
+alias slack='slack-term'
+# Pywal aliases
+alias gruvbox='wal --theme base16-gruvbox-hard'
+alias cyber='wal -i ~/Images/wallpapers/cyber00.jpg'
+alias immortal='wal --theme base16-black-metal-immortal'
+alias owl='wal --theme dkeg-owl'
+alias tokyo='wal -i ~/Images/wallpapers/city07.jpg'
+
+# Using awesome-terminal-fonts
+source /usr/share/fonts/awesome-terminal-fonts/*.sh 
 
 #depot_tools for chromium and skia library
 #export PATH="${PWD}/depot_tools:${PATH}"
 #
 
-# rajout pour réparer qt5
+# MY ADDITIONS
 export QT_QPA_PLATFORMTHEME=qt5ct
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+# __conda_setup="$('/home/antharia/Dev/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+    # eval "$__conda_setup"
+# else
+    # if [ -f "/home/antharia/Dev/miniconda3/etc/profile.d/conda.sh" ]; then
+        # . "/home/antharia/Dev/miniconda3/etc/profile.d/conda.sh"
+    # else
+        # export PATH="/home/antharia/Dev/miniconda3/bin:$PATH"
+    # fi
+# fi
+# unset __conda_setup
+# <<< conda initialize <<<
 

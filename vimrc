@@ -23,6 +23,7 @@ set softtabstop=4
 set tabstop=4
 :imap fd <Esc>
 nmap <leader>o :TagbarToggle<CR>
+nmap <Tab> <C-W>w
 
 " put symbols in sign column
 hi clear SignColumn
@@ -43,6 +44,9 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Raimondi/delimitMate'
+Plugin 'ervandew/supertab'
+Plugin 'valloric/youcompleteme'
+Plugin 'tidalcycles/vim-tidal'
 
 call vundle#end()
 

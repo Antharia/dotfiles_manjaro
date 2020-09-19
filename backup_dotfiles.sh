@@ -1,16 +1,12 @@
 #!/bin/sh
-cp -r /home/nico/.config/i3 .
-cp /home/nico/.vimrc .
-cp /home/nico/.Xresources .
-cp /home/nico/.zshrc .
-cp /home/nico/.config/compton.conf .
-cp -r /home/nico/.config/i3status .
-cp -r /home/nico/.config/mps-youtube/config .
-cp -r /home/nico/.config/polybar .
-cp -r /home/nico/.config/qutebrowser .
-cp -r /home/nico/.config/rofi .
-cp -r /home/nico/.config/termite .
-cp -r /home/nico/.config/wal .
+cp -r ~/.config/i3 .
+cp ~/.vimrc ./vimrc
+cp ~/.Xresources ./Xresources
+cp ~/.zshrc ./zshrc
+cp -r ~/.config/i3status ./config/i3status
+cp -r ~/.config/rofi ./config/rofi
+cp -r ~/.config/termite ./config/termite
+cp -r ~/.config/wal ./config/wal
 git add -A
 git commit -m "new config files"
     

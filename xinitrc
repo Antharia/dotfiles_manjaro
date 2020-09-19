@@ -66,4 +66,6 @@ get_session(){
 exec $(get_session)
 
 # Wal start on boot
-wal -R
+wal --theme base16-gruvbox-hard
+~/.config/wpg/wp_init.sh
+
