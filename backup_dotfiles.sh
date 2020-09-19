@@ -9,4 +9,5 @@ cp -r ~/.config/termite ./config/termite
 cp -r ~/.config/wal ./config/wal
 git add -A
 git commit -m "new config files"
+git log
     
