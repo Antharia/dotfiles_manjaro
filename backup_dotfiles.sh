@@ -9,6 +9,8 @@ cp -r ~/.config/termite ./config/termite
 cp -r ~/.config/wal ./config/wal
 cp ~/.tmux.conf ./tmux.conf
 cp ~/.bashrc ./bashrc
+cp -r ~/.config/zathura ./config/zathura
+cp -r ~/.config/rclone ./config/rclone
 
 
 cp -r ~/Images/wallpapers Images/wallpapers

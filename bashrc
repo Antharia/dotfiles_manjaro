@@ -140,3 +140,4 @@ ex ()
 
 # personal stuff
 export LC_CTYPE="en_US.UTF-8"
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp'

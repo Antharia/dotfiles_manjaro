@@ -93,8 +93,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias bandcamp='campdown'
-alias bcdl='campdown'
 
 # Wal: change terminal colors
 # Import colorscheme from 'wal' asynchronously
@@ -113,6 +111,8 @@ source ~/.cache/wal/colors-tty.sh
 # . "${HOME}/.cache/wal/colors.sh"
 
 # Create alias
+alias bandcamp='campdown'
+alias bcdl='campdown'
 alias dmen='dmenu_run -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"'
 alias supercollider='scide'
 alias caps='setxkbmap -option caps:super'
@@ -120,6 +120,7 @@ alias wifi-scan='nmcli dev wifi'
 alias wifi-connect='nmcli dev wifi connect'
 alias dual='bash ~/.screenlayout/dualscreen.sh; nitrogen --restore; wal -i ~/Images/wallpapers/cyber00.jpg -n'
 alias slack='slack-term'
+alias setclock='sudo date +%T -s '
 # Pywal aliases
 alias gruvbox='wal --theme base16-gruvbox-hard'
 alias cyber='wal -i ~/Images/wallpapers/cyber00.jpg'

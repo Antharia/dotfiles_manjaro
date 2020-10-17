@@ -47,6 +47,13 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'ervandew/supertab'
 Plugin 'valloric/youcompleteme'
 Plugin 'tidalcycles/vim-tidal'
+Plugin 'vimwiki/vimwiki'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
+Plugin 'michal-h21/vim-zettel'
+
+" to search in the Zettelkasten
+let g:nv_search_paths = ['~/Documents/notes']
 
 call vundle#end()
 
@@ -106,3 +113,7 @@ let g:easytags_suppress_ctags_warning = 1
 nmap <silent> <leader>b :TagbarToggle<CR>
 " Uncomment to open tagbar automatically whenever possible
 "autocmd BufEnter * nested :call tagbar#autoopen(0)
+
+
+" ----- execute python script -----
+nmap <leader>p :! python %<CR>

@@ -5,7 +5,7 @@
 set $mod Mod4
 
 # Afficher ce fichier config
-bindsym $mod+i exec terminal -e vim ~/.i3/config
+bindsym $mod+i exec termite -e vim ~/.config/i3/config
 
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
@@ -163,11 +163,9 @@ set $ws8 8
 # assigner les deux premiers workspaces aux deux écrans
 workspace $ws1 output eDP1
 workspace $ws2 output VGA1
-workspace $ws4 output VGA1
 
 # Move container to output
 bindsym $mod+m move container to output down
-
 # Move workspace to output
 bindsym $mod+Shift+m move workspace to output down
 
@@ -388,9 +386,9 @@ colors {
 
 # Theme colors
 # class                   border       backgr.      text            indic.   child_border
-  client.focused          $term_color3 $term_color0 $term_color4
+  client.focused          $term_color3 $term_color3 $term_color0
   client.focused_inactive $term_color4 $term_color0 $term_color1
-  client.unfocused        $term_color8 $term_color1 $term_color1 
+  client.unfocused        $term_color0 $term_color0 $term_color3 
   client.urgent           $term_color1 #FDF6E3 #1ABC9C #268BD2
   client.placeholder      $term_color3 $term_color0 $term_color4
 
