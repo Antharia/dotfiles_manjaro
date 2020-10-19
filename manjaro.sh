@@ -2,21 +2,25 @@
 
 # mise à jour
 echo "/// pacman update..."
+echo ""
 sudo pacman -Syu
 
 # accès aux paquets AUR
 echo "/// pacaur update..."
+echo ""
 sudo pacman -S pacaur
 
 # supprime le beep interne de l'ordi
 echo "Suppression du beep interne"
+echo ""
 sudo rmmod pcspkr
 sudo echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
 
 # installation des paquets utiles
 echo "Installation des paquets..."
+echo ""
 # sudo pacman -S firefox qutebrowser rofi youtube-dl cmus mps-youtube task nodejs npm python-pip imv rclone mpv lxsession-gtk3 nicotine+ mupdf bind-tools
-sudo pacman -S firefox python task tmux rclone zathura zathura-pdf-mupdf xcalib feh
+sudo pacman -S firefox python task tmux rclone zathura zathura-pdf-mupdf xcalib feh python-pywal
 
 echo " - Audio packages"
 sudo pacman -S pulseaudio pulseaudio-bluetooth pavucontrol
