@@ -20,7 +20,10 @@ sudo echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
 echo "Installation des paquets..."
 echo ""
 # sudo pacman -S firefox qutebrowser rofi youtube-dl cmus mps-youtube task nodejs npm python-pip imv rclone mpv lxsession-gtk3 nicotine+ mupdf bind-tools
-sudo pacman -S firefox python task tmux rclone zathura zathura-pdf-mupdf xcalib feh python-pywal
+sudo pacman -S firefox python task tmux rclone zathura zathura-pdf-mupdf xcalib feh python-pywal rofi
+sudo pacaur -S python-pywalfox
+sudo pywalfox install --global
+chmod +x /usr/lib/python3.8/site-packages/pywalfox/bin/main.sh
 
 echo " - Audio packages"
 sudo pacman -S pulseaudio pulseaudio-bluetooth pavucontrol
@@ -52,6 +55,7 @@ echo " - Enable bitmap fonts"
 sudo mv /etc/fonts/conf.d/10* ~/Backup/
 sudo mv /etc/fonts/conf.d/70-no-bitmaps.conf ~/Backup/
 sudo ln -s /etc/fonts/70-yes-bitmaps.conf /etc/fonts/conf.d/
+
 fc-cache
 
 
