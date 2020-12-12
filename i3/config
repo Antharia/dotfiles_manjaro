@@ -209,7 +209,8 @@ for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
 for_window [class="pcmanfm"] floating enable
-for_window [class="godot"] floating enable
+for_window [class="Godot"] floating enable
+for_window [class="Arandr"] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -349,7 +350,7 @@ bar {
     output primary
     output VGA1
     tray_output primary
-    tray_padding 4
+    tray_padding 3
 }
 
 # hide/unhide i3status bar
