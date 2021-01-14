@@ -32,6 +32,8 @@ export EDITOR="vim"
 
 (cat ~/.cache/wal/sequences &)
 
+source ~/.cache/wal/colors-tty.sh
+
 # ALIASES
 
 alias ls="ls --color"
