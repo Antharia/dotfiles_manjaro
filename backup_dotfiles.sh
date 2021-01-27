@@ -1,7 +1,7 @@
 #!/bin/sh
-cp -r ~/.i3 .
-cp ~/.vimrc ./.vimrc
-cp ~/.Xresources ./.Xresources
+cp -r ~/.i3 ~/Repos/dotfiles/.i3
+cp ~/.vimrc ~/Repos/dotfiles/vimrc
+cp ~/.Xresources ~/Repos/dotfiles/.Xresources
 cp ~/.zshrc ./.zshrc
 cp -r ~/.config/i3status ./.config/i3status
 cp -r ~/.config/rofi ./.config/rofi
