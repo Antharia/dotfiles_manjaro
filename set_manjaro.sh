@@ -15,7 +15,7 @@ sudo printf "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
 
 printf "Installation des paquets utiles..."
 printf ""
-sudo pacman -S firefox rofi youtube-dl cmus rclone nicotine+ zathura zathura-pdf-mupdf termite zsh unzip powerline tk
+sudo pacman -S firefox rofi youtube-dl cmus rclone nicotine+ zathura zathura-pdf-mupdf termite zsh unzip powerline tk ctags
 
 printf "Installation de scripts python..."
 sudo pip install campdown pywal
