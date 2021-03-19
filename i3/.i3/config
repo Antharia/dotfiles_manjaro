@@ -4,6 +4,8 @@
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
+# Edit i3 config file
+# bindsym $mod+i exec termite -e 'vim ~/.i3/config'
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
 
@@ -15,8 +17,8 @@ default_floating_border normal
 hide_edge_borders none
 
 # change borders
-bindsym $mod+u border none; exec notify-send "No border"
-bindsym $mod+y border pixel 1; exec notify-send "1 pixel border"
+bindsym $mod+o border none; exec notify-send "No border"
+bindsym $mod+p border pixel 1; exec notify-send "1 pixel border"
 bindsym $mod+n border normal; exec notify-send "Normal border"
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -28,8 +30,9 @@ font xft:Hack 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec terminal
-# bindsym $mod+Return exec termite
+# bindsym $mod+Return exec terminal
+bindsym $mod+Return exec termite
+bindsym $mod+Shift+Return exec termite floating enable
 
 # kill focused window
 bindsym $mod+q kill
@@ -45,8 +48,8 @@ bindsym $mod+m exec --no-startup-id morc_menu
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
 
-exec --no-startup-id volumeicon
-bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
+# exec --no-startup-id volumeicon
+bindsym $mod+Ctrl+m exec termite -e 'alsamixer'
 #exec --no-startup-id pulseaudio
 #exec --no-startup-id pa-applet
 #bindsym $mod+Ctrl+m exec pavucontrol
@@ -59,9 +62,7 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 
 # Start Applications
 # bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-# bindsym $mod+F2 exec palemoon
 # bindsym $mod+F3 exec pcmanfm
-# bindsym $mod+F3 exec ranger
 # bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 # bindsym $mod+F5 exec terminal -e 'mocp'
 # bindsym $mod+t exec --no-startup-id pkill picom
@@ -81,12 +82,6 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
-# alternatively, you can use the cursor keys:
-# bindsym $mod+Left focus left
-# bindsym $mod+Down focus down
-# bindsym $mod+Up focus up
-# bindsym $mod+Right focus right
-
 # move focused window
 bindsym $mod+Shift+h move left 20px
 bindsym $mod+Shift+j move down 20px
@@ -98,11 +93,6 @@ bindsym $mod+Ctrl+h resize shrink width 20px
 bindsym $mod+Ctrl+j resize shrink height 20px
 bindsym $mod+Ctrl+l resize grow width 20px
 bindsym $mod+Ctrl+k resize grow height 20px
-# alternatively, you can use the cursor keys:
-# bindsym $mod+Shift+Left move left
-# bindsym $mod+Shift+Down move down
-# bindsym $mod+Shift+Up move up
-# bindsym $mod+Shift+Right move right
 
 # workspace back and forth (with/without active container)
 workspace_auto_back_and_forth yes
@@ -118,9 +108,9 @@ bindsym $mod+v split v;exec notify-send 'tile vertically'
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-# bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+s layout stacking; exec notify-send "layout stacking"
+bindsym $mod+t layout tabbed; exec notify-send "layout tabbed"
+bindsym $mod+e layout toggle split; exec notify-send "toggle split"
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -141,19 +131,15 @@ bindsym $mod+Shift+9 move scratchpad
 # If there are multiple scratchpad windows, this command cycles through them.
 bindsym $mod+9 scratchpad show
 
-#navigate workspaces next / previous
-bindsym $mod+Ctrl+Right workspace next
-bindsym $mod+Ctrl+Left workspace prev
-
 # Workspace names
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
-set $ws1 1:shell
-set $ws2 2:wired
-set $ws3 3:files
-set $ws4 4:media
-set $ws5 5:code
+set $ws1 1:
+set $ws2 2:
+set $ws3 3:
+set $ws4 4:
+set $ws5 5:
 set $ws6 6
 set $ws7 7
 set $ws8 8
@@ -200,14 +186,12 @@ for_window [class="calamares"] floating enable border normal
 for_window [class="Clipgrab"] floating enable
 for_window [title="File Transfer*"] floating enable
 for_window [class="fpakman"] floating enable
-for_window [class="Galculator"] floating enable border pixel 1
 for_window [class="GParted"] floating enable border normal
 for_window [title="i3_help"] floating enable sticky enable border normal
 for_window [class="Lightdm-settings"] floating enable
 for_window [class="Lxappearance"] floating enable sticky enable border normal
 for_window [class="Manjaro-hello"] floating enable
 for_window [class="Manjaro Settings Manager"] floating enable border normal
-for_window [title="MuseScore: Play Panel"] floating enable
 for_window [class="Nitrogen"] floating enable sticky enable border normal
 for_window [class="Oblogout"] fullscreen enable
 for_window [class="octopi"] floating enable
@@ -218,11 +202,13 @@ for_window [class="qt5ct"] floating enable sticky enable border normal
 for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
 for_window [class="Simple-scan"] floating enable border normal
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
-for_window [class="Skype"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
-for_window [class="Xfburn"] floating enable
 for_window [class="pcmanfm"] floating enable
+for_window [class="godot"] floating enable
+for_window [class="Arandr"] floating enable
+for_window [class="mpv"] floating enable
+for_window [class="qjacktcl"] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -282,19 +268,22 @@ mode "resize" {
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id nitrogen --restore; sleep 1; picom -b
+# exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 #exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
-exec --no-startup-id pamac-tray
+# exec --no-startup-id pamac-tray
 # exec --no-startup-id clipit
-exec --no-startup-id blueman-applet
+# exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
-exec --no-startup-id start_conky_maia
+# exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
-exec --no-startup-id xautolock -time 10 -locker blurlock
+exec --no-startup-id xautolock -time 30 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
+exec "wal --theme base16-gruvbox-hard"
+exec "setxkbmap -option caps:super" 
+exec "~/.screenlayout/dual_screen.sh"
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
@@ -328,19 +317,17 @@ set_from_resource $term_color14    color14
 set_from_resource $term_color15    color15
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
-bar {
-	i3bar_command i3bar
-	status_command i3status
-	position top
-	font pango:Hack 8
 
-## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-#	tray_output primary
-#	tray_output eDP1
+# bindsym $mod+i bar hidden_state toggle
+bindsym $mod+i bar mode toggle
+bar {
+    mode dock
+    # hidden_state invisible
+    # modifier Mod4
+
 
 	bindsym button4 nop
 	bindsym button5 nop
-#   font xft:URWGothic-Book 11
 	strip_workspace_numbers yes
 
     colors {
@@ -349,12 +336,22 @@ bar {
         separator  $term_color0
 
 #                          border       backgr.          text
-        focused_workspace  $term_color0 $term_background $term_color11
+        focused_workspace  $term_color0 $term_color6 $term_background
         active_workspace   $term_color0 $term_background $term_color13
         inactive_workspace $term_color0 $term_background $term_color7
         binding_mode       $term_color0 $term_color1 $term_background
         urgent_workspace   $term_color0 $term_color7 $term_color1
     }
+
+	i3bar_command i3bar
+	status_command i3status
+	position top
+	font pango:Hack 8
+
+    output primary
+    output VGA1
+    tray_output primary
+    tray_padding 4
 }
 
 # hide/unhide i3status bar
@@ -362,13 +359,12 @@ bar {
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #556064 #556064 #80FFF9 #FDF6E3
-  client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
-  client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
-  client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
-  client.placeholder      #000000 #0c0c0c #ffffff #000000 
-
-  client.background       #2B2C2B
+  client.focused          $term_color11 $term_color11  $term_color0  $term_color3
+  client.focused_inactive $term_color0 $term_color0  $term_color3  $term_color3
+  client.unfocused        $term_color0 $term_color0  $term_color15  $term_color3
+  client.urgent           $term_color1 $term_color1  $term_color11  $term_color3
+  client.placeholder      $term_color1 $term_color8  $term_color11  $term_color3
+  client.background       $term_color0
 
 #############################
 ### settings for i3-gaps: ###
@@ -432,11 +428,20 @@ bindsym $mod+g gaps inner all plus 5
 bindsym $mod+Ctrl+g gaps inner all minus 5
 
 # Grow floating window size
-bindsym $mod+s resize grow width 20px; resize grow height 20px; move position center
-bindsym $mod+Ctrl+s resize shrink width 20px; resize shrink height 20px; move position center
+bindsym $mod+w resize grow width 20px; resize grow height 20px; move position center
+bindsym $mod+Ctrl+w resize shrink width 20px; resize shrink height 20px; move position center
 
 # No gaps
 bindsym $mod+z gaps inner current set 0
 
 # Center window
 bindsym $mod+c move position center
+
+# Move workspaces
+bindsym $mod+Right move workspace to output right
+bindsym $mod+Down move workspace to output down
+bindsym $mod+Left move workspace to output left
+bindsym $mod+Up move workspace to output up
+
+# dunst colors
+exec_always --no-startup-id dunst -lb "$term_background" -nb "$term_background" -cb "$term_background" -lf "$term_foreground" -bf "term_foreground" -cf "$term_foreground" -nf "$term_foreground" -fn "ypn envypn 12" -s -geometry "400x60-10+40" -format "<b>%s</b>\n%b" -shrink  -lto 3 -nto 5 -cto 0 -align "left" -transparency 0 -padding 8 -horizontal_padding 8 -font "Hack 8"

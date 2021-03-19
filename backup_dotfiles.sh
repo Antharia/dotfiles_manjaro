@@ -1,13 +1,13 @@
 #!/bin/sh
-cp -r ~/.i3 ~/Repos/dotfiles/.i3
+cp -r ~/.i3 ~/Repos/dotfiles/i3
 cp ~/.vimrc ~/Repos/dotfiles/vimrc
 cp ~/.Xresources ~/Repos/dotfiles/.Xresources
-cp ~/.zshrc ./.zshrc
+cp ~/.zshrc ~/Repos/dotfiles/.zshrc
 cp -r ~/.config/i3status ./.config/i3status
 cp -r ~/.config/rofi ./.config/rofi
 cp -r ~/.config/termite ./.config/termite
 cp -r ~/.config/wal ./.config/wal
-cp ~/.tmux.conf ./.tmux.conf
+cp ~/.tmux.conf ~/Repos/dotfiles/.tmux.conf
 cp ~/.bashrc ./.bashrc
 cp -r ~/.config/zathura ./.config/zathura
 cp -r ~/.config/rclone ./.config/rclone

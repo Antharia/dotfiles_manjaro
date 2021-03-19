@@ -23,19 +23,19 @@ order += "wireless _first_"
 order += "battery all"
 # order += "load"
 order += "memory"
-order += "tztime local"
 order += "volume master"
+order += "tztime local"
 
 volume master {
         format = ": %volume"
-        format_muted = "♪: muted (%volume)"
+        format_muted = "♪ muted (%volume)"
         device = "default"
         mixer = "Master"
         mixer_idx = 0
 }
 
 cpu_usage {
-        format = " :%usage "
+        format = "  %usage "
 }
 
 load {
@@ -45,7 +45,7 @@ load {
 
 disk "/" {
         # format = " hdd %avail "
-        format = "⛁%avail "
+        format = "⛁ %avail "
 }
 
 ethernet _first_ {
@@ -74,12 +74,12 @@ battery all {
 }
 
 memory {
-        format = "%used ☉%available"
+        format = " %used ☉ %available"
         threshold_degraded = "1G"
         format_degraded = "MEMORY < %available"
 }
 
 tztime local {
         # format = "%Y-%m-%d %H:%M:%S"
-        format = "%d.%m.%Y %H:%M "
+        format = " %d.%m.%Y  %H:%M"
 }

@@ -22,8 +22,13 @@ set smarttab
 set softtabstop=4
 set tabstop=4
 :imap fd <Esc>
-nmap <leader>o :TagbarToggle<CR>
+nmap <leader>m :TagbarToggle<CR>
 nmap <Tab> <C-W>w
+nnoremap b B
+nnoremap e E
+nnoremap B 0
+nnoremap E $
+autocmd FileType python nnoremap <leader>f :0,$!yapf<CR>
 
 " put symbols in sign column
 hi clear SignColumn
@@ -51,6 +56,7 @@ Plugin 'vimwiki/vimwiki'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'michal-h21/vim-zettel'
+Plugin 'preservim/nerdcommenter'
 
 " to search in the Zettelkasten
 let g:nv_search_paths = ['~/Documents/notes']
@@ -114,14 +120,21 @@ nmap <silent> <leader>b :TagbarToggle<CR>
 " Uncomment to open tagbar automatically whenever possible
 "autocmd BufEnter * nested :call tagbar#autoopen(0)
 
+" ---- preservim/nerdcommenter settings ---- "
+" Create default mappings
+let g:NERDCreateDefaultMappings = 1
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+" Enable NERDCommenterToggle to check all selected lines is commented or not
+let g:NERDToggleCheckAllLines = 1
 
 " ----- execute python script -----
 nmap <leader>p :! python %<CR>
-
-" ----- Autocomplete love2d files -----
-function SetLovePrefs()
-  setlocal dictionary-=~/Dev/love2d/love.dict dictionary+=~/Dev/love2d/love.dict
-  setlocal iskeyword+=.
-endfunction
-
-autocmd FileType lua call SetLovePrefs()
