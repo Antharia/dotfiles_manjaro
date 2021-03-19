@@ -17,8 +17,8 @@ default_floating_border normal
 hide_edge_borders none
 
 # change borders
-bindsym $mod+u border none; exec notify-send "No border"
-bindsym $mod+y border pixel 1; exec notify-send "1 pixel border"
+bindsym $mod+o border none; exec notify-send "No border"
+bindsym $mod+p border pixel 1; exec notify-send "1 pixel border"
 bindsym $mod+n border normal; exec notify-send "Normal border"
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -321,9 +321,9 @@ set_from_resource $term_color15    color15
 # bindsym $mod+i bar hidden_state toggle
 bindsym $mod+i bar mode toggle
 bar {
-    mode hide
-    hidden_state hide
-    modifier Mod4
+    mode dock
+    # hidden_state invisible
+    # modifier Mod4
 
 
 	bindsym button4 nop

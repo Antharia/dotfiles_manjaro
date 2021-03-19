@@ -22,8 +22,13 @@ set smarttab
 set softtabstop=4
 set tabstop=4
 :imap fd <Esc>
-nmap <leader>o :TagbarToggle<CR>
+nmap <leader>m :TagbarToggle<CR>
 nmap <Tab> <C-W>w
+nnoremap b B
+nnoremap e E
+nnoremap B 0
+nnoremap E $
+autocmd FileType python nnoremap <leader>f :0,$!yapf<CR>
 
 " put symbols in sign column
 hi clear SignColumn
@@ -131,14 +136,5 @@ let g:NERDTrimTrailingWhitespace = 1
 " Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
 
-
 " ----- execute python script -----
 nmap <leader>p :! python %<CR>
-
-" ----- Autocomplete love2d files -----
-function SetLovePrefs()
-  setlocal dictionary-=~/Dev/love2d/love.dict dictionary+=~/Dev/love2d/love.dict
-  setlocal iskeyword+=.
-endfunction
-
-autocmd FileType lua call SetLovePrefs()

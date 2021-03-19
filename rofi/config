@@ -1,5 +1,0 @@
-# Dark theme.
-theme: "~/.cache/wal/colors-rofi-dark";
-
-# Light theme.
-theme: "~/.cache/wal/colors-rofi-light";
