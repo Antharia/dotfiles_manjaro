@@ -1,11 +1,11 @@
 set nocompatible
-filetype off
 
 let mapleader=','
 
 set t_Co=256
 syntax enable
 filetype indent on
+filetype plugin on
 set autoindent
 set expandtab
 set ignorecase
@@ -39,7 +39,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'vim-syntastic/syntastic'
+" Plugin 'vim-syntastic/syntastic'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-easytags'
 Plugin 'majutsushi/tagbar'
@@ -57,6 +57,7 @@ Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'michal-h21/vim-zettel'
 Plugin 'preservim/nerdcommenter'
+Plugin 'Vimjas/vim-python-pep8-indent'
 
 " to search in the Zettelkasten
 let g:nv_search_paths = ['~/Documents/notes']
@@ -98,12 +99,12 @@ nmap <silent> <leader>t :NERDTreeTabsToggle<CR>
 " let g:nerdtree_tabs_open_on_console_startup = 1
 
 "---- vim-syntastic/syntastic ----"
-let g:syntastic_error_symbol = 'x'
-let g:syntastic_warning_symbol = "w"
-augroup mySyntastic
-    au!
-    au FileType tex letb:syntastic_mode = "passive"
-augroup END
+" let g:syntastic_error_symbol = 'x'
+" let g:syntastic_warning_symbol = "w"
+" augroup mySyntastic
+"     au!
+"     au FileType tex letb:syntastic_mode = "passive"
+" augroup END
 
 "---- xolox/vim-easytags settings ----"
 " Where to look for tags files
@@ -138,3 +139,5 @@ let g:NERDToggleCheckAllLines = 1
 
 " ----- execute python script -----
 nmap <leader>p :! python %<CR>
+" ----- run build script -----
+nmap <leader>b :! sh ./build.sh %<CR>

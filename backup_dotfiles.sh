@@ -5,8 +5,8 @@ cp ~/.Xresources ~/Repos/dotfiles/.Xresources
 cp ~/.zshrc ~/Repos/dotfiles/.zshrc
 cp -r ~/.config/i3status ./.config/i3status
 cp -r ~/.config/rofi ./.config/rofi
-cp -r ~/.config/termite ./.config/termite
-cp -r ~/.config/wal ./.config/wal
+cp -r ~/.config/termite ~/Repos/dotfiles/.config/termite
+cp -r ~/.config/wal ~/Repos/dotfiles/.config/wal
 cp ~/.tmux.conf ~/Repos/dotfiles/.tmux.conf
 cp ~/.bashrc ~/Repos/dotfiles/.bashrc
 cp -r ~/.config/zathura ~/Repos/dotfiles/.config/zathura
