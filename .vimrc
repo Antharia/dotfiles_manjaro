@@ -58,6 +58,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'michal-h21/vim-zettel'
 Plugin 'preservim/nerdcommenter'
 Plugin 'Vimjas/vim-python-pep8-indent'
+Plugin 'junegunn/goyo.vim'
 
 " to search in the Zettelkasten
 let g:nv_search_paths = ['~/Documents/notes']
