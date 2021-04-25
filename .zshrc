@@ -45,8 +45,8 @@ alias caps='setxkbmap -option caps:super'
 alias dualscreen='sh ~/.screenlayout/dual_screen.sh'
 alias bigscreen='sh ~/.screenlayout/big_screen.sh'
 alias backup_dotfiles="~/Repos/dotfiles/backup_dotfiles.sh"
-alias godot='~/Apps/Godot_v3.2.3-stable_x11.64'
 alias guetech='ssh jack@217.69.13.179 -i ~/.ssh/guetech_id_rsa'
+alias droidcam='~/Apps/droidcam/droidcam'
 
 # PROMPT
 
