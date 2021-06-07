@@ -21,6 +21,7 @@ set showcmd
 set smarttab
 set softtabstop=4
 set tabstop=4
+set textwidth=79
 :imap fd <Esc>
 nmap <leader>m :TagbarToggle<CR>
 nmap <Tab> <C-W>w
@@ -142,3 +143,16 @@ let g:NERDToggleCheckAllLines = 1
 nmap <leader>p :! python %<CR>
 " ----- run build script -----
 nmap <leader>b :! sh ./build.sh %<CR>
+
+" ---- Vimwiki settings ---- "
+let g:vimwiki_auto_header=1
+
+let wiki_main = {}
+let wiki_main.path = '~/Documents/vimwiki'
+let wiki_main.path_html = '~/Documents/vimwiki/html'
+
+let wiki_website = {}
+let wiki_website.path = '~/Documents/wiki_website'
+let wiki_website.path_html = '~/Documents/wiki_website/html'
+
+let g:vimwiki_list = [wiki_main, wiki_website]

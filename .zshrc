@@ -39,14 +39,19 @@ source ~/.cache/wal/colors-tty.sh
 
 # ALIASES
 
+alias l="ls --color"
 alias ls="ls --color"
 alias gruvbox='wal --theme base16-gruvbox-hard'
+alias darktooth='wal --theme darktooth'
 alias caps='setxkbmap -option caps:super'
 alias dualscreen='sh ~/.screenlayout/dual_screen.sh'
 alias bigscreen='sh ~/.screenlayout/big_screen.sh'
 alias backup_dotfiles="~/Repos/dotfiles/backup_dotfiles.sh"
 alias guetech='ssh jack@217.69.13.179 -i ~/.ssh/guetech_id_rsa'
 alias droidcam='~/Apps/droidcam/droidcam'
+alias city='wal -i ~/Images/wallpapers/city07.jpg'
+alias ..='cd ..'
+alias ...='cd ..; cd ..'
 
 # PROMPT
 

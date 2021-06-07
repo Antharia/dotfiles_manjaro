@@ -48,7 +48,7 @@ bindsym $mod+m exec --no-startup-id morc_menu
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
 
-# exec --no-startup-id volumeicon
+exec --no-startup-id volumeicon
 bindsym $mod+Ctrl+m exec termite -e 'alsamixer'
 #exec --no-startup-id pulseaudio
 #exec --no-startup-id pa-applet
@@ -102,13 +102,13 @@ bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_
 # split orientation
 # bindsym $mod+h split h;exec notify-send 'tile horizontally'
 bindsym $mod+v split v;exec notify-send 'tile vertically'
-# bindsym $mod+q split toggle
+bindsym $mod+s split toggle; exec notify-send 'split toggle'
 
 # toggle fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking; exec notify-send "layout stacking"
+# bindsym $mod+s layout stacking; exec notify-send "layout stacking"
 bindsym $mod+t layout tabbed; exec notify-send "layout tabbed"
 bindsym $mod+e layout toggle split; exec notify-send "toggle split"
 
