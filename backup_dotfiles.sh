@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "Copying dotfiles to repo."
+echo "Copying dotfiles to repo.\n"
 cp -r ~/.i3 ~/Repos/dotfiles/i3
 cp ~/.vimrc ~/Repos/dotfiles/vimrc
 cp ~/.Xresources ~/Repos/dotfiles/Xresources
@@ -14,6 +14,8 @@ cp -r ~/.config/zathura ~/Repos/dotfiles/zathura
 cp -r ~/.config/rclone ~/Repos/dotfiles/rclone
 cp -r ~/Images/wallpapers ~/Repos/dotfiles/Images/wallpapers
 cp ~/setup_manjaro.sh ~/Repos/dotfiles/setup_manjaro.sh
+echo "Copying done.\n"
 git add -A
 git commit -m "new config files"
-echo "Dotfiles backup done."
+echo "Commit done.\n"
+echo "Dotfiles backup done.\n"
