@@ -75,7 +75,7 @@ bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 # bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 #
 # Restore wallpaper
-exec termite -e nitrogen --restore
+exec --no-startup-id termite -e nitrogen --restore
 
 # focus_follows_mouse no
 
