@@ -4,7 +4,7 @@ cp -r ~/.i3 ~/Repos/dotfiles/i3
 cp ~/.vimrc ~/Repos/dotfiles/vimrc
 cp ~/.Xresources ~/Repos/dotfiles/Xresources
 cp ~/.zshrc ~/Repos/dotfiles/zshrc
-cp -r ~/.config/i3status ./Repos/dotfiles/i3status
+cp -r ~/.config/i3status ~/Repos/dotfiles/i3status
 cp -r ~/.config/rofi ~/Repos/dotfiles/rofi
 cp -r ~/.config/termite ~/Repos/dotfiles/termite
 cp -r ~/.config/wal ~/Repos/dotfiles/wal
